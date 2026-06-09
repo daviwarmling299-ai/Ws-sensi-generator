@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WS STORE PREMIUM V3</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#00e5ff">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="loader">
+
+<div class="logo-loader">
+WS STORE
+</div>
+
+<div class="loader-bar">
+<div class="loader-progress"></div>
+</div>
+
+<p>Carregando Sistema Premium...</p>
+
+</div>
+
+<div class="container">
+
+<div class="logo">
+
+<h1>WS STORE</h1>
+
+<p>GERADOR PREMIUM DE SENSIBILIDADE</p>
+
+</div>
+
+<div class="card">
+
+<div class="input-group">
+
+<label>Modelo do Celular</label>
+
+<input
+type="text"
+id="celular"
+placeholder="Ex: Motorola Edge 50 Fusion">
+
+</div>
+
+<div class="input-group">
+
+<label>Sensibilidade</label>
+
+<select id="nivel">
+
+<option value="alta">Alta</option>
+<option value="media">Média</option>
+<option value="baixa">Baixa</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>DPI</label>
+
+<select id="dpiNivel">
+
+<option value="alta">Alta</option>
+<option value="media">Média</option>
+<option value="baixa">Baixa</option>
+
+</select>
+
+</div>
+
+<button onclick="gerar()" class="generate-btn">
+GERAR CONFIGURAÇÃO
+</button>
+
+</div>
+
+<div id="resultado" class="resultado">
+
+<h2>CONFIGURAÇÃO GERADA</h2>
+
+<div class="item">
+<span>📱 Celular</span>
+<strong id="rCelular"></strong>
+</div>
+
+<div class="item">
+<span>🏷️ Marca</span>
+<strong id="rMarca"></strong>
+</div>
+
+<div class="item">
+<span>⚡ DPI</span>
+<strong id="rDpi"></strong>
+</div>
+
+<div class="item">
+<span>🎯 Geral</span>
+<strong id="rGeral"></strong>
+</div>
+
+<div class="item">
+<span>🔴 Red Dot</span>
+<strong id="rRedDot"></strong>
+</div>
+
+<div class="item">
+<span>🔭 Mira 2x</span>
+<strong id="r2x"></strong>
+</div>
+
+<div class="item">
+<span>🎯 Mira 4x</span>
+<strong id="r4x"></strong>
+</div>
+
+<div class="item">
+<span>🎯 AWM</span>
+<strong id="rAwm"></strong>
+</div>
+
+<div class="item">
+<span>👀 Olhadinha</span>
+<strong id="rOlhadinha"></strong>
+</div>
+
+<div class="item">
+<span>🔘 Botão</span>
+<strong id="rBotao"></strong>
+</div>
+
+<div class="item">
+<span>🔥 Perfil</span>
+<strong id="rPerfil"></strong>
+</div>
+
+<button
+onclick="copiarResultado()"
+class="copy-btn">
+
+COPIAR CONFIGURAÇÃO
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
